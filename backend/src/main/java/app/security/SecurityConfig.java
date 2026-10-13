@@ -99,7 +99,11 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-                List.of("http://localhost:5173","http://24eg105r15.netlify.app"));
+    List.of(
+        "http://localhost:5173",
+        "https://bright-eclair-2bb8dd.netlify.app"
+    )
+);
 
         configuration.setAllowedMethods(
                 List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
